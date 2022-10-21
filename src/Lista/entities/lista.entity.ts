@@ -9,7 +9,7 @@ export class Lista {
 
   @IsNotEmpty()
   @Column({ length: 100, nullable: false })
-  titilo: string;
+  titulo: string;
 
   @IsNotEmpty()
   @Column({ length: 300, nullable: false })

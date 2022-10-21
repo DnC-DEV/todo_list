@@ -1,5 +1,7 @@
 import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
+import { Lista } from "./Lista/entities/lista.entity";
+import { ListaModule } from "./Lista/lista.module";
 
 
 @Module({
@@ -11,9 +13,10 @@ import { TypeOrmModule } from "@nestjs/typeorm";
       username: 'root',
       password: 'root',
       database: 'db_listtodo',
-      entities: [],
+      entities: [Lista],
       synchronize: true,
-    })
+    }),
+    ListaModule
   ],
   controllers: [],
   providers: [],
