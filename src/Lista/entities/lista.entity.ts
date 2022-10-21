@@ -2,7 +2,7 @@ import { IsNotEmpty } from "class-validator";
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 
-@Entity({ name: 'tb_produtos' })
+@Entity({ name: 'tb_lista' })
 export class Lista {
   @PrimaryGeneratedColumn()
   id: number;
